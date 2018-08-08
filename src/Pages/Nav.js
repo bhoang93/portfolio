@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as BrowserRouter, Route, NavLink } from "react-router-dom";
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
@@ -21,7 +21,7 @@ class Nav extends Component {
 	}
 	render() {
 			return(
-		  <Router>
+		  <BrowserRouter basename={process.env.PUBLIC_URL}>
 			    <div>
 			      <div className="navBar">
 			          <NavLink activeStyle={linkStyle} exact className="navText" to="/">Home</NavLink>
@@ -37,7 +37,7 @@ class Nav extends Component {
 			      <Route path="/portfolio" component={Projects} />
 			      <Route path="/contact" component={Contact} />	      
 			    </div>
-			  </Router>
+			  </BrowserRouter>
 		);
 	}
 }

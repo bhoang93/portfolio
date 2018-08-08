@@ -1,9 +1,11 @@
 .photo {
 	width: 200px;
 	height: auto;
+	margin-bottom: 10px;
 }
 
 .text {
-	width: 40%;
+	width: 50%;
 	margin: auto;
+	font-size: 1vw;
 }

@@ -17,7 +17,7 @@ const Contact = () => {
 						<img className="contactLogos" src={email} />
 
 						<Animated animationIn="fadeIn" animationInDelay="900" isVisible={true}>
-							<h4>bhoang35@gmail.com</h4>
+							<h2>Email</h2>
 						</Animated>
 					</a>
 				</div>

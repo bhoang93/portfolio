@@ -14,13 +14,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-              <Particles className="particles" params={{
+      <div id="Header">
+                    <Particles className="particles"
+                     height="200px"
+                     width="1920px"
+                     params={{
   "particles": {
     "number": {
-      "value": 50,
+      "value": 20,
       "density": {
         "enable": true,
-        "value_area": 800
+        "value_area": 300
       }
     },
     "color": {
@@ -124,10 +128,9 @@ class App extends Component {
   },
   "retina_detect": true
 }}/>
-      <div id="Header">
         <h1>Brian Hoang</h1>
             <Animated animationIn="bounceInDown" isVisible={true}>
-               <p className="subtitle">Full Stack Web Developer <span className="joke">(But Mostly Front-End)</span></p>
+               <p className="subtitle">Full Stack Web Developer</p>
             </Animated>
       </div>
 
