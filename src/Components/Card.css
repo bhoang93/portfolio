@@ -1,0 +1,25 @@
+.projects {
+	width: 300px;
+	height: 400px;
+	margin: 5px;
+	color: white;
+	align-items: center;
+	background-color: rgba(40, 50, 40, 0.3);
+}
+
+.cardTitle {
+	margin-top: -10px;
+ 	font-weight: bold;
+ 	color: green;
+}
+
+.cardImg {
+	height: 100px;
+	width: 100px;
+	margin-top: 5px;
+}
+
+.projectButton {
+	position: relative;
+	bottom: 10px;
+}

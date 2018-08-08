@@ -1,0 +1,36 @@
+.contactLinks {
+	color: rgb(140, 140, 140);
+	display: flex;
+	align-items: center;
+}
+
+.contactLinks:hover {
+	color: white;
+}
+
+.contactInfo {
+	width: 80%;
+	margin: auto;
+	justify-content: center;
+}
+
+.boxes {
+	border-radius: 200px;
+	margin: auto;
+	width: 15%;
+	display: flex;
+	align-items: center;
+}
+
+.contactLogos {
+	width: auto;
+	height: 100px;
+	margin: 10px;
+    animation-name: spin;
+    animation-duration: 1.2s;
+}
+
+@keyframes spin {
+    0%   {transform: rotate(120deg);}
+    100% {transform: rotate(360deg);}
+}
