@@ -1,9 +1,10 @@
 {
-  "main.css": "static/css/main.704d6021.css",
-  "main.css.map": "static/css/main.704d6021.css.map",
-  "main.js": "static/js/main.114e679f.js",
-  "main.js.map": "static/js/main.114e679f.js.map",
+  "main.css": "static/css/main.56b9bff3.css",
+  "main.css.map": "static/css/main.56b9bff3.css.map",
+  "main.js": "static/js/main.93e64677.js",
+  "main.js.map": "static/js/main.93e64677.js.map",
   "static\\media\\About.png": "static/media/About.9fb1ed66.png",
+  "static\\media\\CV.pdf": "static/media/CV.7ca6acb5.pdf",
   "static\\media\\docker.png": "static/media/docker.6656591d.png",
   "static\\media\\foodapp.png": "static/media/foodapp.354665f8.png"
 }
