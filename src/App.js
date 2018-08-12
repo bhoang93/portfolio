@@ -3,6 +3,8 @@ import './App.css';
 import RouteBar from './Pages/Nav';
 import Particles from 'react-particles-js';
 import {Animated} from "react-animated-css";
+import {isBrowser} from "react-device-detect";
+
 
 class App extends Component {
   constructor() {
@@ -15,7 +17,7 @@ class App extends Component {
     return (
       <div className="App">
       <div id="Header">
-                    <Particles className="particles"
+      {isBrowser ? <Particles className="particles"
                      height="200px"
                      width="1920px"
                      params={{
@@ -127,7 +129,7 @@ class App extends Component {
     }
   },
   "retina_detect": true
-}}/>
+}}/> : null}         
         <h1>Brian Hoang</h1>
             <Animated animationIn="bounceInDown" isVisible={true}>
                <p className="subtitle">Full Stack Web Developer</p>

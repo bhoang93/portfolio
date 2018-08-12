@@ -2,6 +2,8 @@ import React from 'react';
 import {Animated} from "react-animated-css";
 import './About.css'
 import about from '../Images/About.png';
+import { Button } from 'reactstrap'
+import CV from '../CV/CV.pdf';
 
 const About = () => {
 	return(
@@ -15,6 +17,7 @@ const About = () => {
 				<p>
 				I graduated from Goldsmiths, University of London with a bachelor's degree in Media and Communications. Over those three years I learnt a lot about ways to engage people in the content I create, which helps influence by ability to make websites and apps that are enjoyable and appealing for people to use. 
 				</p>
+				<a href={CV} target="_blank"><Button color="success">Link to CV</Button></a>
 
 		</div>
 		</Animated>
