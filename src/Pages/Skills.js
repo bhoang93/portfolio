@@ -28,6 +28,7 @@ import typescript from '../Images/Logos/typescript.png';
 import express from '../Images/Logos/express.png';
 import postgresql from '../Images/Logos/postgresql.png';
 import redis from '../Images/Logos/redis.png';
+import graphql from '../Images/Logos/graphql.png';
 //Other Images
 import github from '../Images/Logos/github.png';
 import heroku from '../Images/Logos/heroku.png';
@@ -144,7 +145,7 @@ const Skills = () => {
 	        			<img className="logos" src={express} />
 	        		</Tooltip>
 	        		<Tooltip
-						  title="Postgresql"
+						  title="PostgreSQLl"
 						  position="top"
 						  trigger="mouseenter focus"
 						>
@@ -156,6 +157,13 @@ const Skills = () => {
 						  trigger="mouseenter focus"
 						>
 	        			<img className="logos" src={redis} />
+	        		</Tooltip>
+	        		<Tooltip
+						  title="GraphQL"
+						  position="top"
+						  trigger="mouseenter focus"
+						>
+	        			<img className="logos" src={graphql} />
 	        		</Tooltip>
 	        		</div>
 	        </ListGroupItem>

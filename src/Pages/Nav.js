@@ -8,8 +8,8 @@ import Contact from './Contact';
 import './Nav.css'
 
 const linkStyle = {
-	fontWeight: "bolder",
-	borderBottom: "3px solid green",
+	fontWeight: "bold",
+	borderBottom: "2px solid green",
 }
 
 class Nav extends Component {

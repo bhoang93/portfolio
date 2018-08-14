@@ -20,7 +20,7 @@ const Projects = () => {
 		<Animated animationIn="zoomInDown" animationOut="fadeOut" isVisible={true}>
 		<div id="projectGrid">
 			<Project cardTitle={foodApp.title} cardText={foodApp.text} cardImg={foodapp} buttonLink="https://bhoang93.github.io/foodapp/"/>
-			<Project cardTitle={faceRecog.title} cardText={faceRecog.text} cardImg={facerecog} buttonLink="http://facial-recog.herokuapp.com//"/>
+			<Project cardTitle={faceRecog.title} cardText={faceRecog.text} cardImg={facerecog} buttonLink="http://facial-recog.herokuapp.com/"/>
 		</div>
 		</Animated>
 		)

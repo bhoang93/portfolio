@@ -10,6 +10,7 @@
 .skillLogos {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .logos {
@@ -42,34 +43,18 @@ h5 {
 }
 
 @media only screen and (max-width: 750px) {
+	h5 {
+		font-size: 3vw;
+		margin-bottom: 3px;
+	}
 	.logos {
-		height: 40px;
-		width: 40px;
+		height: 25px;
+		width: 25px;
+		margin-left: 2px;
+		margin-right: 2px;
 	}
 
 		.skills {
 		width: 80%;
-	}
-}
-
-@media only screen and (max-width: 600px) {
-.logos {
-	height: 30px;
-	width: 30px;
-	margin-left: 2px;
-	margin-right: 2px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-.skills {
-	width: 80%;
-	}
-}
-
-@media only screen and (max-width: 300px) {
-.logos {
-	height: 20px;
-	width: 20px;
 	}
 }
