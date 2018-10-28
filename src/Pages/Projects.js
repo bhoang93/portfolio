@@ -5,8 +5,15 @@ import foodapp from "../Images/Projects/foodapp.png";
 import facerecog from "../Images/Projects/facerecog.png";
 import gem from "../Images/Projects/gem.png";
 import dogapp from "../Images/Projects/dogapp.png";
+import bluetail from "../Images/Projects/bluetail.png";
 
 import { Animated } from "react-animated-css";
+
+const blueTail = {
+  title: "Blue Tail",
+  text:
+    "Website for a dropping shipping company built using modern CSS techniques with stylish animations and transitions."
+};
 
 const foodApp = {
   title: "FoodApp",
@@ -36,6 +43,12 @@ const Projects = () => {
   return (
     <Animated animationIn="zoomInDown" animationOut="fadeOut" isVisible={true}>
       <div id="projectGrid">
+        <Project
+          cardTitle={blueTail.title}
+          cardText={blueTail.text}
+          cardImg={bluetail}
+          buttonLink="https://bhoang93.github.io/bluetail/dist/index.html"
+        />
         <Project
           cardTitle={foodApp.title}
           cardText={foodApp.text}

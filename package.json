@@ -1,7 +1,7 @@
 {
   "homepage": "http://bhoang93.github.io/portfolio",
   "name": "BrianHoangPortfolio",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.1.3",

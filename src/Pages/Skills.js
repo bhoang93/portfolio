@@ -15,6 +15,7 @@ import gatsby from "../Images/Logos/gatsby.png";
 import html5 from "../Images/Logos/html5.png";
 import css3 from "../Images/Logos/css3.png";
 import bootstrap from "../Images/Logos/bootstrap.png";
+import sass from "../Images/Logos/sass.png";
 //JS Images
 import javascript from "../Images/Logos/javascript.png";
 import es6 from "../Images/Logos/es6.png";
@@ -76,6 +77,10 @@ const Skills = () => {
               trigger="mouseenter focus"
             >
               <img className="logos" src={bootstrap} />
+            </Tooltip>
+
+            <Tooltip title="SASS" position="top" trigger="mouseenter focus">
+              <img className="logos" src={sass} />
             </Tooltip>
           </div>
         </ListGroupItem>
