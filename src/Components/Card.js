@@ -1,7 +1,13 @@
-import React from 'react';
-import './Card.css'
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, Button } from 'reactstrap';
+import React from "react";
+import "./Card.css";
+import {
+  Card,
+  CardImg,
+  CardText,
+  CardBody,
+  CardTitle,
+  Button
+} from "reactstrap";
 
 const Project = ({ cardTitle, cardText, cardImg, buttonLink }) => {
   return (
@@ -10,9 +16,13 @@ const Project = ({ cardTitle, cardText, cardImg, buttonLink }) => {
         <CardImg className="cardImg" src={cardImg} alt="Card image cap" />
         <CardBody>
           <CardTitle className="cardTitle">{cardTitle}</CardTitle>
-          <CardText>{cardText}</CardText>
+          <CardText className="cardText">{cardText}</CardText>
         </CardBody>
-        <a href={buttonLink}><Button color="success" className="projectButton">Visit Site</Button></a>
+        <a href={buttonLink}>
+          <Button color="success" className="projectButton">
+            Visit Site
+          </Button>
+        </a>
       </Card>
     </div>
   );

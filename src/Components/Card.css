@@ -1,38 +1,44 @@
 .projects {
-	width: 300px;
-	height: 400px;
-	margin: 5px;
-	color: white;
-	align-items: center;
-	background-color: rgba(40, 40, 40, 0.3);
+  width: 30rem;
+  height: 40rem;
+  margin: 5px;
+  color: white;
+  align-items: center;
+  background-color: rgba(40, 40, 40, 0.3);
 }
 
 .cardTitle {
-	margin-top: -10px;
- 	font-weight: bold;
- 	color: #28a745;
+  margin: 1rem;
+  font-weight: bold;
+  color: #28a745;
+  font-size: 2rem;
+}
+
+.cardText {
+  font-size: 1.6rem;
 }
 
 .cardImg {
-	height: 100px;
-	width: 100px;
-	margin-top: 5px;
+  height: 10rem;
+  width: 10rem;
+  margin-top: 5px;
 }
 
 .projectButton {
-	position: relative;
-	bottom: 10px;
+  position: relative;
+  bottom: 1rem;
+  font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 600px) {
-	.projects {
-		width: 160px;
-		height: 300px;
-		font-size: 2.5vw;
-	}
-	.cardImg {
-		height: 70px;
-		width: 70px;
-		margin-top: 5px;
-}
+  .projects {
+    width: 16rem;
+    height: 30rem;
+    font-size: 2.5vw;
+  }
+  .cardImg {
+    height: 7rem;
+    width: 7rem;
+    margin-top: 5px;
+  }
 }
