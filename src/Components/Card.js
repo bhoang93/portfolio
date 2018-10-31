@@ -1,29 +1,25 @@
 import React from "react";
 import "./Card.css";
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  Button
-} from "reactstrap";
+import CustomButton from "./CustomButton.js";
 
-const Project = ({ cardTitle, cardText, cardImg, buttonLink }) => {
+const Project = ({ cardTitle, cardText, cardImg, skills, buttonLink }) => {
   return (
-    <div>
-      <Card className="projects">
-        <CardImg className="cardImg" src={cardImg} alt="Card image cap" />
-        <CardBody>
-          <CardTitle className="cardTitle">{cardTitle}</CardTitle>
-          <CardText className="cardText">{cardText}</CardText>
-        </CardBody>
+    <div className="projects">
+      <img className="cardImg" src={cardImg} alt="Card image" />
+      <div className="cardInfo">
+        <h2 className="cardTitle">{cardTitle}</h2>
+        <p className="cardText">{cardText}</p>
+        <div className="techUsed">
+          <div className="techUsedLogos">
+            {skills.map(logo => {
+              return <img className="skillLogoCard" src={logo} alt="logo" />;
+            })}
+          </div>
+        </div>
         <a href={buttonLink}>
-          <Button color="success" className="projectButton">
-            Visit Site
-          </Button>
+          <CustomButton text="Visit Site" />
         </a>
-      </Card>
+      </div>
     </div>
   );
 };

@@ -6,6 +6,9 @@ import "./Skills.css";
 import "react-tippy/dist/tippy.css";
 import { Tooltip } from "react-tippy";
 
+import skillsMp4 from "../Videos/skills-bg.mp4";
+import skillsWebm from "../Videos/skills-bg.webm";
+
 //React Images
 import redux from "../Images/Logos/redux.png";
 import router from "../Images/Logos/router.png";
@@ -104,6 +107,13 @@ const Skills = () => {
   return (
     <Animated animationIn="zoomInDown" animationOut="fadeOut" isVisible={true}>
       <ListGroup className="skills">
+        <div className="skillsBg">
+          <video className="skillsBgContent" autoPlay muted loop>
+            <source src={skillsMp4} type="video/mp4" />
+            <source src={skillsWebm} type="video/webm" />
+            Your browser is not supported!
+          </video>
+        </div>
         <ListGroupItem className="skillRow">
           <h5>React</h5>
           <div className="skillLogos">{displaySkillLogos(reactList)}</div>

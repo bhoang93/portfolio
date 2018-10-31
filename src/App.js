@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.scss";
+import "./App.css";
 import RouteBar from "./Pages/Nav";
 import { Animated } from "react-animated-css";
 
@@ -15,11 +15,14 @@ class App extends Component {
         <div id="Header">
           <h1>Brian Hoang</h1>
           <Animated animationIn="bounceInDown" isVisible={true}>
-            <p className="subtitle">Front End Web Developer</p>
+            <p className="subtitle">
+              <div className="subtitleText">Front End Web Developer</div>
+            </p>
           </Animated>
         </div>
 
         <RouteBar />
+        <div id="background" />
       </div>
     );
   }

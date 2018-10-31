@@ -1,44 +1,62 @@
 .projects {
-  width: 30rem;
-  height: 40rem;
-  margin: 5px;
+  width: 60vw;
+  height: 30rem;
+  margin-bottom: 1.5rem;
   color: white;
-  align-items: center;
-  background-color: rgba(40, 40, 40, 0.3);
+  background-image: linear-gradient(
+    120deg,
+    #40bcd8 0%,
+    #40bcd8 28%,
+    #f2f2f2 28%
+  );
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-out;
 }
-
+.projects:hover {
+  transform: scale(1.05);
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.6);
+}
+.cardInfo {
+  width: 70%;
+  float: right;
+}
 .cardTitle {
-  margin: 1rem;
   font-weight: bold;
-  color: #28a745;
-  font-size: 2rem;
+  color: #f39237;
+  text-transform: uppercase;
 }
-
 .cardText {
   font-size: 1.6rem;
+  color: #222222;
 }
-
 .cardImg {
-  height: 10rem;
-  width: 10rem;
-  margin-top: 5px;
+  height: 20rem;
+  width: auto;
+  float: left;
 }
-
-.projectButton {
-  position: relative;
-  bottom: 1rem;
-  font-size: 1.6rem;
+.techUsed {
+  width: 80%;
+  border-radius: 3px;
+  margin: auto;
+  backgroundmargin: 0 auto;
+  padding: 1rem 0;
+  background-image: linear-gradient(
+    120deg,
+    #40bcd8 0%,
+    #40bcd8 50%,
+    #39a9db 50%
+  );
 }
-
+.skillLogoCard {
+  width: 7rem;
+  height: auto;
+  margin-right: 1rem;
+}
 @media only screen and (max-width: 600px) {
   .projects {
-    width: 16rem;
-    height: 30rem;
-    font-size: 2.5vw;
   }
   .cardImg {
-    height: 7rem;
-    width: 7rem;
-    margin-top: 5px;
   }
 }

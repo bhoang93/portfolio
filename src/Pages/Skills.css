@@ -5,10 +5,13 @@ html {
 .skills {
   width: 60%;
   margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 
 .skillRow {
-  background-color: rgba(40, 40, 40, 0.3);
+  background-color: rgba(40, 40, 40, 0.1);
 }
 
 .skillLogos {
@@ -23,6 +26,7 @@ html {
   margin-left: 5px;
   margin-right: 5px;
   filter: grayscale(100%);
+  transition: all 0.2s;
 }
 
 .logos:hover {
@@ -31,8 +35,24 @@ html {
 
 h5 {
   font-weight: bold;
+  font-size: 2rem;
   margin-bottom: 15px;
-  color: #28a745;
+  color: #f39237;
+}
+
+.skillsBg {
+  position: absolute;
+  top: -50rem;
+  left: -50rem;
+  right: -50rem;
+  bottom: -50rem;
+  margin: auto;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+.skillsBgContent {
+  width: 100%;
 }
 
 @media only screen and (max-width: 900px) {

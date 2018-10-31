@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  position: relative;
+}
+
+#Header {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  background-color: #40bcd8;
+  display: inline-block;
+  width: 18%;
+  padding: 0.1rem 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.subtitleText {
+  transition: all 0.2s ease;
+}
+
+.subtitle:hover {
+  transform: skewX(-20deg);
+}
+
+.subtitle:hover > .subtitleText {
+  transform: skewX(20deg);
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+}
+
+#background {
+  position: fixed;
+  z-index: -999999;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(
+    120deg,
+    #1c77c3 0%,
+    #1c77c3 70%,
+    #39a9db 70%
+  );
+}

@@ -14,14 +14,9 @@ h2 {
 }
 
 .contactLinks {
-  color: rgb(140, 140, 140);
   display: flex;
   align-items: center;
   font-size: 2rem;
-}
-
-.contactLinks:hover {
-  color: white;
 }
 
 .boxes {
@@ -36,6 +31,27 @@ h2 {
   margin: 1rem;
   animation-name: spin;
   animation-duration: 1.2s;
+  transition: all 0.2s ease;
+}
+
+.contactTitle,
+.contactTitle:link,
+.contactTitle:visited {
+  color: #f2f2f2;
+  opacity: 0;
+  transform: translateX(-3rem);
+  transition: all 0.2s ease;
+  position: relative;
+  z-index: -2;
+}
+
+.contactLogos:hover {
+  transform: scale(1.1);
+}
+
+.contactLogos:hover + .contactTitle {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @keyframes spin {

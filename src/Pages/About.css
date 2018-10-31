@@ -1,18 +1,26 @@
 .photo {
-	width: 200px;
-	height: auto;
-	margin-bottom: 10px;
+  width: 24rem;
+  height: auto;
+  float: left;
+  clip-path: circle(42%);
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+  transition: all 0.2s ease-in;
+}
+
+.photo:hover {
+  clip-path: circle(45%);
 }
 
 .text {
-	width: 50%;
-	margin: auto;
-	font-size: 1vw;
+  width: 30%;
+  margin: auto;
+  font-size: 1.6rem;
 }
 
 @media only screen and (max-width: 600px) {
-	.text {
-		font-size: 2.7vw;
-		width: 80%;
-	}
+  .text {
+    font-size: 2.7vw;
+    width: 80%;
+  }
 }
