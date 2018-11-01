@@ -59,7 +59,7 @@
   height: auto;
   margin-right: 1rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1500px) {
   .projects {
     width: 90vw;
     height: 23rem;
@@ -107,7 +107,7 @@
     display: none;
   }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   .projects {
     width: 90vw;
     height: 10rem;
