@@ -8,7 +8,7 @@ import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import "./Nav.css";
-import AboutImg from "../Images/About.jpg";
+import logo from "../Images/bhoanglogo.png";
 
 const linkStyle = {
   fontWeight: "bold",
@@ -60,9 +60,9 @@ class Nav extends Component {
                 backgroundColor: "white",
                 color: "white",
                 opacity: 0.1,
-                fontSize: "50vh"
+                fontSize: "10vh"
               }}
-              src={AboutImg}
+              src={logo}
             />
             <div className="navTextContainer">
               <NavLink

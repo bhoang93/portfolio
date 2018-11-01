@@ -30,6 +30,11 @@
 .cardText {
   font-size: 1.6rem;
   color: #222222;
+  transform: scaleY(0);
+  transition: all 0.2s;
+}
+.projects:hover > .cardInfo > .cardText {
+  transform: scaleY(1);
 }
 .cardImg {
   height: 20rem;

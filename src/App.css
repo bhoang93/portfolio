@@ -28,6 +28,7 @@ h1 {
   width: 18%;
   padding: 0.1rem 0.5rem;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .subtitleText {
@@ -35,11 +36,33 @@ h1 {
 }
 
 .subtitle:hover {
-  transform: skewX(-20deg);
+  animation: bounceOut 0.8s ease;
 }
 
-.subtitle:hover > .subtitleText {
-  transform: skewX(20deg);
+@keyframes bounceOut {
+  0% {
+    transform: scaleX(1);
+  }
+
+  10% {
+    transform: scaleX(0.8);
+  }
+
+  40% {
+    transform: scaleX(1.1);
+  }
+
+  60% {
+    transform: scaleX(0.9);
+  }
+
+  80% {
+    transform: scaleX(1.1);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 @media only screen and (max-width: 600px) {

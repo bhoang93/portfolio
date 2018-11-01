@@ -42,17 +42,18 @@ h5 {
 
 .skillsBg {
   position: absolute;
-  top: -50rem;
-  left: -50rem;
-  right: -50rem;
-  bottom: -50rem;
+  top: -30rem;
+  left: -30rem;
+  right: -30rem;
+  bottom: -30rem;
   margin: auto;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.4;
 }
 
 .skillsBgContent {
   width: 100%;
+  object-fit: fill;
 }
 
 @media only screen and (max-width: 900px) {
