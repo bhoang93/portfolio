@@ -63,6 +63,16 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 1024px) {
+  .contactTitle,
+  .contactTitle:link,
+  .contactTitle:visited {
+    color: #f2f2f2;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .logos {
     width: auto;

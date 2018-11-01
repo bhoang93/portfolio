@@ -22,7 +22,7 @@ html {
 
 .logos {
   height: 8rem;
-  width: 8rem;
+  width: auto;
   margin-left: 5px;
   margin-right: 5px;
   filter: grayscale(100%);
@@ -42,7 +42,7 @@ h5 {
 
 .skillsBg {
   position: absolute;
-  top: -30rem;
+  top: 0rem;
   left: -30rem;
   right: -30rem;
   bottom: -30rem;
@@ -56,30 +56,45 @@ h5 {
   object-fit: fill;
 }
 
-@media only screen and (max-width: 900px) {
-  .logos {
-    height: 5rem;
-    width: 5rem;
+@media only screen and (max-width: 1024px) {
+  .skills {
+    width: 90%;
   }
 
-  .skills {
-    width: 70%;
+  h5 {
+    font-size: 2.5rem;
+  }
+
+  .skillsBg {
+    position: absolute;
+    top: 0rem;
+    left: -30rem;
+    right: -30rem;
+    bottom: -30rem;
   }
 }
 
-@media only screen and (max-width: 750px) {
-  h5 {
-    font-size: 3vw;
-    margin-bottom: 3px;
-  }
-  .logos {
-    height: 25px;
-    width: 25px;
-    margin-left: 2px;
-    margin-right: 2px;
+@media only screen and (max-width: 800px) {
+  .skills {
+    width: 90%;
   }
 
+  h5 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
   .skills {
-    width: 80%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  h5 {
+    margin-bottom: 0.2rem;
+  }
+
+  .skillsBg {
+    display: none;
   }
 }

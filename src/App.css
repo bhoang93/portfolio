@@ -29,6 +29,10 @@ h1 {
   padding: 0.1rem 0.5rem;
   transition: all 0.2s ease;
   cursor: pointer;
+  font-style: italic;
+  font-family: serif;
+  font-size: 1.5rem;
+  color: #f2f2f2;
 }
 
 .subtitleText {
@@ -65,13 +69,36 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   h1 {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   .subtitle {
-    font-size: 1rem;
+    font-size: 3rem;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .subtitle {
+    font-size: 2rem;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+    width: 70%;
+  }
+
+  #Header {
+    margin-bottom: 0.5rem;
   }
 }
 

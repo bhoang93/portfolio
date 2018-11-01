@@ -1,6 +1,7 @@
 .homePage {
   display: flex;
   justify-content: center;
+  align-items: center;
   animation: scrollIn 0.4s ease-out;
   overflow: hidden;
 }
@@ -38,6 +39,12 @@
   font-size: 1.6rem;
 }
 
+.blockImg {
+  height: 10rem;
+  width: auto;
+  align-self: center;
+}
+
 .responsive {
   background-image: linear-gradient(
     120deg,
@@ -47,11 +54,6 @@
   );
   color: #f2f2f2;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
-}
-.responsiveImg {
-  height: 10rem;
-  width: auto;
-  align-self: center;
 }
 .responsive:hover > .responsiveImg {
   animation: scaleAround 3s ease infinite;
@@ -84,8 +86,6 @@
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
 }
 .performanceImg {
-  height: 10rem;
-  width: auto;
   align-self: center;
   position: absolute;
   top: 50%;
@@ -122,10 +122,11 @@
 }
 .design {
   position: relative;
+  margin-right: 0;
 }
 .side {
   width: 100%;
-  height: 30rem;
+  height: inherit;
   position: absolute;
   top: 0;
   left: 0;
@@ -133,11 +134,6 @@
   border-radius: 0.7rem;
   backface-visibility: hidden;
   transition: all 0.5s ease-in;
-}
-.designImg {
-  height: 10rem;
-  width: auto;
-  align-self: center;
 }
 .designFront {
   padding: 2rem;
@@ -152,6 +148,7 @@
   justify-content: space-between;
   font-size: 1.4rem;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.7rem;
 }
 .designBack {
   background-color: #1c77c3;
@@ -168,8 +165,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  opacity: 0.2;
+  opacity: 0;
   animation: rotate 2s ease infinite;
+  transition: all 1s ease;
 }
 @keyframes rotate {
   0% {
@@ -205,6 +203,9 @@
 .design:hover > .designBack {
   transform: rotateY(0);
 }
+.design:hover > .designBack > .designImgBack {
+  opacity: 0.2;
+}
 .backText {
   font-weight: 800;
   font-size: 4rem;
@@ -220,4 +221,61 @@
   transform: translate(-50%, -50%);
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+@media only screen and (max-width: 1024px) {
+  .block {
+    padding: 1rem;
+    width: 30%;
+  }
+  .blockTitle {
+    font-size: 3rem;
+  }
+  .blockText {
+    font-size: 2rem;
+  }
+  .designFront {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .block {
+    padding: 1rem;
+    width: 30%;
+  }
+  .blockTitle {
+    font-size: 2rem;
+  }
+  .designFront {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .block {
+    padding: 0.5rem;
+    width: 28%;
+    height: 20rem;
+    margin-right: 1rem;
+  }
+  .design {
+    margin-right: 0;
+  }
+  .designFront {
+    padding: 0.5rem;
+  }
+  .blockTitle {
+    font-size: 1.4rem;
+  }
+  .blockImg {
+    height: 5rem;
+  }
+  .blockText {
+    font-size: 1rem;
+  }
+  .loadingBar {
+    height: 2rem;
+    border-width: 2px;
+  }
+  .backText {
+    font-size: 2rem;
+  }
 }

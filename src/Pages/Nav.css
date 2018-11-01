@@ -52,8 +52,19 @@
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 420px) {
+  .navOpen {
+    top: auto;
+    bottom: 0.5rem;
+    right: 1rem;
+    padding: 0.25rem 1.25rem;
+  }
+
   .navText {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+
+  .navOpen:hover {
+    transform: scale(1);
   }
 }
