@@ -52,7 +52,7 @@
   transform: scale(1.2);
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .navOpen {
     top: auto;
     bottom: 0.5rem;

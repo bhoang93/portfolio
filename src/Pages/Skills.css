@@ -84,7 +84,7 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .skills {
     width: 90%;
     background-color: rgba(0, 0, 0, 0.4);
@@ -92,9 +92,5 @@ h5 {
 
   h5 {
     margin-bottom: 0.2rem;
-  }
-
-  .skillsBg {
-    display: none;
   }
 }
