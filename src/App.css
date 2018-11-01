@@ -69,7 +69,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1500px) {
   h1 {
     font-size: 6rem;
   }
@@ -87,7 +87,7 @@ h1 {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   h1 {
     font-size: 4rem;
   }

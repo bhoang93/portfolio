@@ -222,7 +222,7 @@
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1500px) {
   .block {
     padding: 1rem;
     width: 30%;

@@ -56,7 +56,7 @@ h5 {
   object-fit: fill;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1500px) {
   .skills {
     width: 90%;
   }
