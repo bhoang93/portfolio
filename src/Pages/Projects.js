@@ -8,36 +8,36 @@ import dogapp from "../Images/Projects/dogapp.png";
 import bluetail from "../Images/Projects/bluetail.png";
 
 //React Images
-import redux from "../Images/Logos/redux.png";
-import router from "../Images/Logos/router.png";
-import gatsby from "../Images/Logos/gatsby.png";
+// import redux from "../Images/Logos/redux.png";
+// import router from "../Images/Logos/router.png";
+// import gatsby from "../Images/Logos/gatsby.png";
 //Front-End Images
 import html5 from "../Images/Logos/html5.png";
 import css3 from "../Images/Logos/css3.png";
 import bootstrap from "../Images/Logos/bootstrap.png";
 import sass from "../Images/Logos/sass.png";
 //JS Images
-import javascript from "../Images/Logos/javascript.png";
+// import javascript from "../Images/Logos/javascript.png";
 import es6 from "../Images/Logos/es6.png";
-import jquery from "../Images/Logos/jquery.png";
+// import jquery from "../Images/Logos/jquery.png";
 import nodejs from "../Images/Logos/nodejs.png";
 import reactLogo from "../Images/Logos/react.png";
-import jest from "../Images/Logos/jest.png";
-import typescript from "../Images/Logos/typescript.png";
+// import jest from "../Images/Logos/jest.png";
+// import typescript from "../Images/Logos/typescript.png";
 //Back-End Images
-import php from "../Images/Logos/php.png";
+// import php from "../Images/Logos/php.png";
 import express from "../Images/Logos/express.png";
 import postgresql from "../Images/Logos/postgresql.png";
 import redis from "../Images/Logos/redis.png";
-import graphql from "../Images/Logos/graphql.png";
+// import graphql from "../Images/Logos/graphql.png";
 //Other Images
-import github from "../Images/Logos/github.png";
-import heroku from "../Images/Logos/heroku.png";
-import docker from "../Images/Logos/docker.png";
-import aws from "../Images/Logos/aws.png";
-import photoshop from "../Images/Logos/photoshop.png";
-import premiere from "../Images/Logos/premiere.png";
-import circleci from "../Images/Logos/circleci.png";
+// import github from "../Images/Logos/github.png";
+// import heroku from "../Images/Logos/heroku.png";
+// import docker from "../Images/Logos/docker.png";
+// import aws from "../Images/Logos/aws.png";
+// import photoshop from "../Images/Logos/photoshop.png";
+// import premiere from "../Images/Logos/premiere.png";
+// import circleci from "../Images/Logos/circleci.png";
 
 import { Animated } from "react-animated-css";
 
@@ -106,6 +106,7 @@ const Projects = () => {
               cardImg={project.img}
               skills={project.skills}
               buttonLink={project.link}
+              key={project.title}
             />
           );
         })}

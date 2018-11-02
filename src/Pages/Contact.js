@@ -1,6 +1,5 @@
 import React from "react";
 import { Animated } from "react-animated-css";
-import { Collapse } from "reactstrap";
 import "./Contact.css";
 
 import github from "../Images/Logos/github.png";
@@ -10,7 +9,8 @@ import email from "../Images/Home/email.png";
 class ContactButton {
   constructor(href, classN, img, title) {
     this.href = href;
-    (this.classN = classN), (this.img = img);
+    this.classN = classN;
+    this.img = img;
     this.title = title;
   }
 }
@@ -45,7 +45,11 @@ const Contact = () => {
             return (
               <a className="contactLinks" href={contact.href}>
                 <li className={contact.classN}>
-                  <img className="contactLogos" src={contact.img} />
+                  <img
+                    className="contactLogos"
+                    src={contact.img}
+                    alt="contact logo"
+                  />
                   <h2 className="contactTitle">{contact.title}</h2>
                 </li>
               </a>

@@ -90,14 +90,22 @@ const jsList = [
   jestL,
   typescriptL
 ];
-const backEndList = [phpL, expressL, redisL, graphqlL];
-const otherList = [githubL, herokuL, dockerL, awsL, photoshopL, circleciL];
+const backEndList = [phpL, expressL, postgresqlL, redisL, graphqlL];
+const otherList = [
+  githubL,
+  herokuL,
+  dockerL,
+  awsL,
+  photoshopL,
+  premiereL,
+  circleciL
+];
 
 const displaySkillLogos = list => {
   return list.map(skill => {
     return (
       <Tooltip title={skill.name} position="top" trigger="mouseenter focus">
-        <img className="logos" src={skill.img} />
+        <img className="logos" src={skill.img} alt="logo" />
       </Tooltip>
     );
   });

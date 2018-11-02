@@ -1,10 +1,7 @@
-import React, { Component } from "react";
-import { Animated } from "react-animated-css";
-import { Collapse, Button } from "reactstrap";
+import React from "react";
 import "./Home.css";
 
 import responsive from "../Images/Home/responsive.png";
-import lightning from "../Images/Home/lightning.png";
 import design from "../Images/Home/design.png";
 import design2 from "../Images/Home/design2.png";
 

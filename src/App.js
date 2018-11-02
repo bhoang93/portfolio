@@ -15,9 +15,7 @@ class App extends Component {
         <div id="Header">
           <h1>Brian Hoang</h1>
           <Animated animationIn="bounceInDown" isVisible={true}>
-            <p className="subtitle">
-              <div className="subtitleText">Front End Web Developer</div>
-            </p>
+            <h3 className="subtitle">Front End Web Developer</h3>
           </Animated>
         </div>
 

@@ -10,7 +10,7 @@ const About = () => {
   return (
     <Animated animationIn="zoomInDown" animationOut="fadeOut" isVisible={true}>
       <div className="text">
-        <img className="photo" src={about} />
+        <img className="photo" alt="Brian Hoang" src={about} />
 
         <p>
           I am a self-taught web developer. While working as a graphic designer
