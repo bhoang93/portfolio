@@ -7,6 +7,9 @@ import About from "./About";
 import Projects from "./Projects";
 import Skills from "./Skills";
 import Contact from "./Contact";
+import Icon from "../Images/Icon";
+import { ICON } from "../Images/SvgConst";
+
 import "./Nav.css";
 import logo from "../Images/bhoanglogo.png";
 
@@ -47,7 +50,11 @@ class Nav extends Component {
               backgroundColor: !this.state.navOpen ? "#d63230" : "#39a9db"
             }}
           >
-            {!this.state.navOpen ? "+" : "-"}
+            {!this.state.navOpen ? (
+              <Icon hw={15} icon={ICON.PLUS} />
+            ) : (
+              <Icon hw={15} icon={ICON.MINUS} />
+            )}
           </div>
           <div className="navBar" style={this.isNavOpen()}>
             <Blob
