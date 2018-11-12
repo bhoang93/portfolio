@@ -3,9 +3,19 @@
   height: auto;
   float: left;
   clip-path: circle(42%);
-  -webkit-shape-outside: circle();
-  shape-outside: circle();
+  -webkit-shape-outside: circle(42%);
+  shape-outside: circle(42%);
   transition: all 0.2s ease-in;
+}
+
+@keyframes clipIn {
+  0% {
+    clip-path: circle(0%);
+  }
+
+  100% {
+    clip-path: circle(42%);
+  }
 }
 
 .photo:hover {

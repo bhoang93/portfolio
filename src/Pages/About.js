@@ -26,7 +26,7 @@ const About = () => {
           I graduated from Goldsmiths, University of London with a bachelor's
           degree in Media and Communications. Over those three years I learnt a
           lot about ways to engage people in the content I create, which helps
-          influence by ability to build websites and apps that are enjoyable and
+          influence my ability to build websites and apps that are enjoyable and
           appealing for people to use.
         </p>
         <a href={CV} target="_blank">
