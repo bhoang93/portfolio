@@ -77,22 +77,7 @@ const gemCalculator = {
   link: "https://bhoang93.github.io/gemcalculator/"
 };
 
-const picturesOfDogs = {
-  title: "Pictures of Dogs",
-  img: dogapp,
-  text:
-    "Website which fetches pictures of dogs from an API, displaying them in modals as well as feauturing infinite scrolling and a robust navigation system.",
-  skills: [reactLogo, es6, css3],
-  link: "https://bhoang93.github.io/dog-app/"
-};
-
-const projectList = [
-  blueTail,
-  foodApp,
-  faceRecog,
-  gemCalculator,
-  picturesOfDogs
-];
+const projectList = [blueTail, foodApp, faceRecog, gemCalculator];
 
 const Projects = () => {
   return (
