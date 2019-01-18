@@ -6,10 +6,11 @@ import facerecog from "../Images/Projects/facerecog.png";
 import gem from "../Images/Projects/gem.png";
 import dogapp from "../Images/Projects/dogapp.png";
 import bluetail from "../Images/Projects/bluetail.png";
+import afa from "../Images/Projects/AFA.png";
 
 //React Images
 // import redux from "../Images/Logos/redux.png";
-// import router from "../Images/Logos/router.png";
+import router from "../Images/Logos/router.png";
 // import gatsby from "../Images/Logos/gatsby.png";
 //Front-End Images
 import html5 from "../Images/Logos/html5.png";
@@ -41,6 +42,15 @@ import redis from "../Images/Logos/redis.png";
 
 import { Animated } from "react-animated-css";
 
+const aFa = {
+  title: "Advocates for Animals",
+  img: afa,
+  text:
+    "React application for an animal rights law firm using the Wordpress REST API for backend functionality.",
+  skills: [reactLogo, router, es6, sass, css3],
+  link: "https://advocates-for-animals.com/"
+};
+
 const blueTail = {
   title: "Blue Tail",
   img: bluetail,
@@ -68,16 +78,7 @@ const faceRecog = {
   link: "http://facial-recog.herokuapp.com/"
 };
 
-const gemCalculator = {
-  title: "Rainbow Gem Calculator",
-  img: gem,
-  text:
-    "Tool for projecting currency for an online game, performing several calculations based on user inputs.",
-  skills: [reactLogo, es6, css3],
-  link: "https://bhoang93.github.io/gemcalculator/"
-};
-
-const projectList = [blueTail, foodApp, faceRecog, gemCalculator];
+const projectList = [aFa, faceRecog, foodApp, blueTail];
 
 const Projects = () => {
   return (

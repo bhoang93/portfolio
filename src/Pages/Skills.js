@@ -10,8 +10,10 @@ import skillsMp4 from "../Videos/skills-bg.mp4";
 import skillsWebm from "../Videos/skills-bg.webm";
 
 //React Images
+import reactLogo from "../Images/Logos/react.png";
 import redux from "../Images/Logos/redux.png";
 import router from "../Images/Logos/router.png";
+import enzyme from "../Images/Logos/enzyme.png";
 import gatsby from "../Images/Logos/gatsby.png";
 //Front-End Images
 import html5 from "../Images/Logos/html5.png";
@@ -23,7 +25,6 @@ import javascript from "../Images/Logos/javascript.png";
 import es6 from "../Images/Logos/es6.png";
 import jquery from "../Images/Logos/jquery.png";
 import nodejs from "../Images/Logos/nodejs.png";
-import reactLogo from "../Images/Logos/react.png";
 import jest from "../Images/Logos/jest.png";
 import typescript from "../Images/Logos/typescript.png";
 //Back-End Images
@@ -48,7 +49,9 @@ class Skill {
   }
 }
 
+const reactL = new Skill("JSX", reactLogo);
 const reduxL = new Skill("Redux", redux);
+const enzymeL = new Skill("Enzyme", enzyme);
 const routerL = new Skill("React Router", router);
 const gatsbyL = new Skill("Gatsby", gatsby);
 
@@ -61,7 +64,6 @@ const javascriptL = new Skill("Javscript", javascript);
 const es6L = new Skill("ES6", es6);
 const jqueryL = new Skill("jQuery", jquery);
 const nodeJsL = new Skill("Node JS", nodejs);
-const reactL = new Skill("React", reactLogo);
 const jestL = new Skill("Jest", jest);
 const typescriptL = new Skill("TypeScript", typescript);
 
@@ -79,17 +81,9 @@ const photoshopL = new Skill("Photoshop", photoshop);
 const premiereL = new Skill("Premiere", premiere);
 const circleciL = new Skill("Circle CI", circleci);
 
-const reactList = [reduxL, routerL, gatsbyL];
+const reactList = [reactL, reduxL, enzymeL, routerL, gatsbyL];
 const frontEndList = [html5L, css3L, bootstrapL, sassL];
-const jsList = [
-  javascriptL,
-  es6L,
-  jqueryL,
-  nodeJsL,
-  reactL,
-  jestL,
-  typescriptL
-];
+const jsList = [javascriptL, es6L, typescriptL, jqueryL, nodeJsL, jestL];
 const backEndList = [phpL, expressL, postgresqlL, redisL, graphqlL];
 const otherList = [
   githubL,
