@@ -1,11 +1,11 @@
 {
-  "main.css": "static/css/main.21dcd710.css",
-  "main.css.map": "static/css/main.21dcd710.css.map",
-  "main.js": "static/js/main.78fe8bfd.js",
-  "main.js.map": "static/js/main.78fe8bfd.js.map",
+  "main.css": "static/css/main.d09a259f.css",
+  "main.css.map": "static/css/main.d09a259f.css.map",
+  "main.js": "static/js/main.fde30ff8.js",
+  "main.js.map": "static/js/main.fde30ff8.js.map",
   "static\\media\\AFA.png": "static/media/AFA.3f3b1681.png",
   "static\\media\\About.jpg": "static/media/About.c48432fb.jpg",
-  "static\\media\\CV.pdf": "static/media/CV.ee8beb02.pdf",
+  "static\\media\\CV.pdf": "static/media/CV.1e290151.pdf",
   "static\\media\\bhoanglogo.png": "static/media/bhoanglogo.8ac0c8c2.png",
   "static\\media\\bluetail.png": "static/media/bluetail.db353cc5.png",
   "static\\media\\docker.png": "static/media/docker.6656591d.png",
@@ -14,5 +14,9 @@
   "static\\media\\jquery.png": "static/media/jquery.450f2b96.png",
   "static\\media\\skills-bg.mp4": "static/media/skills-bg.4bb62110.mp4",
   "static\\media\\skills-bg.webm": "static/media/skills-bg.d7966ce0.webm",
-  "static\\media\\typescript.png": "static/media/typescript.26cc95f2.png"
+  "static\\media\\stack.svg": "static/media/stack.87d60dfe.svg",
+  "static\\media\\trado.png": "static/media/trado.ba03c055.png",
+  "static\\media\\typescript.png": "static/media/typescript.26cc95f2.png",
+  "static\\media\\wac.svg": "static/media/wac.ab8da38b.svg",
+  "static\\media\\zevie.webp": "static/media/zevie.c1679513.webp"
 }
