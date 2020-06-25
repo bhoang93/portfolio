@@ -4,6 +4,7 @@ import "./Home.css";
 import responsive from "../Images/Home/responsive.png";
 import design from "../Images/Home/design.png";
 import design2 from "../Images/Home/design2.png";
+import stack from "../Images/Home/stack.svg";
 
 const Home = () => {
   return (
@@ -15,7 +16,7 @@ const Home = () => {
           alt="responsive"
           className="blockImg responsiveImg"
         />
-        <p className="blockText">Built for any screen size.</p>
+        <p className="blockText">Building for any size and device.</p>
       </div>
       <div className="block performance">
         <h3 className="blockTitle">Performant Code</h3>
@@ -26,19 +27,9 @@ const Home = () => {
         <p className="blockText">Fast and efficient architecture.</p>
       </div>
       <div className="block design">
-        <div className="side designFront">
-          <h3 className="blockTitle">Great Design</h3>
-          <img src={design2} alt="design" className="blockImg designImg" />
-          <p className="blockText">Stylish and modern aesthetics.</p>
-        </div>
-
-        <div className="side designBack">
-          <h3 className="backText">
-            Great<br />Design
-          </h3>
-          <img src={design} alt="design" className="designImgBack" />
-          <div className="specialDesign" />
-        </div>
+        <h3 className="blockTitle">Full Stack</h3>
+        <img src={stack} alt="design" className="blockImg designImg" />
+        <p className="blockText">Ability to work end-to-end.</p>
       </div>
     </div>
   );

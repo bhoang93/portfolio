@@ -7,11 +7,16 @@ import gem from "../Images/Projects/gem.png";
 import dogapp from "../Images/Projects/dogapp.png";
 import bluetail from "../Images/Projects/bluetail.png";
 import afa from "../Images/Projects/AFA.png";
+import trado from "../Images/Projects/trado.png";
+import zevieLogo from "../Images/Projects/zevie.webp";
+import wacLogo from "../Images/Projects/wac.svg";
+import wamLogo from "../Images/Projects/Young_Marmalade.png";
 
 //React Images
-// import redux from "../Images/Logos/redux.png";
+import redux from "../Images/Logos/redux.png";
 import router from "../Images/Logos/router.png";
-// import gatsby from "../Images/Logos/gatsby.png";
+import gatsby from "../Images/Logos/gatsby.png";
+import expo from "../Images/Logos/expo.png";
 //Front-End Images
 import html5 from "../Images/Logos/html5.png";
 import css3 from "../Images/Logos/css3.png";
@@ -30,11 +35,11 @@ import reactLogo from "../Images/Logos/react.png";
 import express from "../Images/Logos/express.png";
 import postgresql from "../Images/Logos/postgresql.png";
 import redis from "../Images/Logos/redis.png";
-// import graphql from "../Images/Logos/graphql.png";
+import graphql from "../Images/Logos/graphql.png";
 //Other Images
 // import github from "../Images/Logos/github.png";
 // import heroku from "../Images/Logos/heroku.png";
-// import docker from "../Images/Logos/docker.png";
+import docker from "../Images/Logos/docker.png";
 // import aws from "../Images/Logos/aws.png";
 // import photoshop from "../Images/Logos/photoshop.png";
 // import premiere from "../Images/Logos/premiere.png";
@@ -42,49 +47,37 @@ import redis from "../Images/Logos/redis.png";
 
 import { Animated } from "react-animated-css";
 
-const aFa = {
-  title: "Advocates for Animals",
-  img: afa,
-  text:
-    "React application for an animal rights law firm using the Wordpress REST API for backend functionality.",
-  skills: [reactLogo, router, es6, sass, css3],
-  link: "https://advocates-for-animals.com/"
+const tradoApp = {
+  title: "Trado",
+  img: trado,
+  text: "Quoting and shopping app for electricians made in React Native.",
+  skills: [expo, reactLogo, redux, es6],
+  link: "https://apps.apple.com/gb/app/trado/id1497693898",
 };
 
-const blueTail = {
-  title: "Blue Tail",
-  img: bluetail,
-  text:
-    "Website for a dropping shipping company built using modern CSS techniques with stylish animations and transitions.",
-  skills: [html5, css3, sass],
-  link: "https://bhoang93.github.io/bluetail/dist/index.html"
+const wac = {
+  title: "White & Co",
+  img: wacLogo,
+  text: "Brochure site for Dental Practices using Drupal and Gatsby.",
+  skills: [gatsby, redux, reactLogo, es6, graphql, docker],
+  link: "https://www.whiteandcodental.co.uk/",
 };
 
-const foodApp = {
-  title: "FoodApp",
-  img: foodapp,
-  text:
-    "A progressive web app built in React where users can find places to eat using their current location or one they submit themselves.",
-  skills: [reactLogo, es6, css3, bootstrap],
-  link: "https://bhoang93.github.io/foodapp/"
+const zevie = {
+  title: "We Are Marmalade",
+  img: wamLogo,
+  text: "Website for car insurance company using Drupal and Gatsby.",
+  skills: [gatsby, redux, reactLogo, es6, graphql, docker],
+  link: "https://www.wearemarmalade.co.uk/",
 };
 
-const faceRecog = {
-  title: "Face Recognition",
-  img: facerecog,
-  text:
-    "A website using a face recognition API to detect faces and identify the demographics inside. Has a fully functioning log-in system with hashed passwords.",
-  skills: [reactLogo, es6, css3, postgresql, redis, express],
-  link: "http://facial-recog.herokuapp.com/"
-};
-
-const projectList = [aFa, faceRecog, foodApp, blueTail];
+const projectList = [tradoApp, wac, zevie];
 
 const Projects = () => {
   return (
     <Animated animationIn="zoomInDown" animationOut="fadeOut" isVisible={true}>
       <div id="projectGrid">
-        {projectList.map(project => {
+        {projectList.map((project) => {
           return (
             <Project
               cardTitle={project.title}

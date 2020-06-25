@@ -123,7 +123,22 @@
 .design {
   position: relative;
   margin-right: 0;
+  background: white;
+  transition: all 0.2s ease;
 }
+
+.design:hover {
+  background: black;
+}
+
+.design:hover * {
+  color: white;
+}
+
+.design:hover img {
+  filter: invert(1);
+}
+
 .side {
   width: 100%;
   height: inherit;
@@ -238,10 +253,18 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  .homePage {
+    flex-direction: column;
+    padding: 0 25px;
+  }
+
   .block {
     padding: 1rem;
-    width: 30%;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
   }
+
   .blockTitle {
     font-size: 2rem;
   }
@@ -251,10 +274,7 @@
 }
 @media only screen and (max-width: 500px) {
   .block {
-    padding: 0.5rem;
-    width: 28%;
-    height: 20rem;
-    margin-right: 1rem;
+    height: 15rem;
   }
   .design {
     margin-right: 0;

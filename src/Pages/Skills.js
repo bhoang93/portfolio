@@ -15,11 +15,13 @@ import redux from "../Images/Logos/redux.png";
 import router from "../Images/Logos/router.png";
 import enzyme from "../Images/Logos/enzyme.png";
 import gatsby from "../Images/Logos/gatsby.png";
+import expo from "../Images/Logos/expo.png";
 //Front-End Images
 import html5 from "../Images/Logos/html5.png";
 import css3 from "../Images/Logos/css3.png";
 import bootstrap from "../Images/Logos/bootstrap.png";
 import sass from "../Images/Logos/sass.png";
+import styledLogo from "../Images/Logos/styled-components.png";
 //JS Images
 import javascript from "../Images/Logos/javascript.png";
 import es6 from "../Images/Logos/es6.png";
@@ -33,6 +35,7 @@ import express from "../Images/Logos/express.png";
 import postgresql from "../Images/Logos/postgresql.png";
 import redis from "../Images/Logos/redis.png";
 import graphql from "../Images/Logos/graphql.png";
+import mongoLogo from "../Images/Logos/mongo.png";
 //Other Images
 import github from "../Images/Logos/github.png";
 import heroku from "../Images/Logos/heroku.png";
@@ -54,11 +57,13 @@ const reduxL = new Skill("Redux", redux);
 const enzymeL = new Skill("Enzyme", enzyme);
 const routerL = new Skill("React Router", router);
 const gatsbyL = new Skill("Gatsby", gatsby);
+const expoL = new Skill("React Native/Expo", expo);
 
 const html5L = new Skill("HTML5", html5);
 const css3L = new Skill("CSS3", css3);
 const bootstrapL = new Skill("Bootstrap", bootstrap);
 const sassL = new Skill("Sass", sass);
+const styledC = new Skill("Styled Components", styledLogo);
 
 const javascriptL = new Skill("Javscript", javascript);
 const es6L = new Skill("ES6", es6);
@@ -80,23 +85,16 @@ const awsL = new Skill("AWS", aws);
 const photoshopL = new Skill("Photoshop", photoshop);
 const premiereL = new Skill("Premiere", premiere);
 const circleciL = new Skill("Circle CI", circleci);
+const mongo = new Skill("Mongo DB", mongoLogo);
 
-const reactList = [reactL, reduxL, enzymeL, routerL, gatsbyL];
-const frontEndList = [html5L, css3L, bootstrapL, sassL];
-const jsList = [javascriptL, es6L, typescriptL, jqueryL, nodeJsL, jestL];
-const backEndList = [phpL, expressL, postgresqlL, redisL, graphqlL];
-const otherList = [
-  githubL,
-  herokuL,
-  dockerL,
-  awsL,
-  photoshopL,
-  premiereL,
-  circleciL
-];
+const reactList = [reactL, reduxL, routerL, gatsbyL, expoL];
+const frontEndList = [html5L, css3L, styledC, sassL];
+const jsList = [javascriptL, es6L, typescriptL, nodeJsL, jestL];
+const backEndList = [graphqlL, mongo, dockerL, awsL];
+const otherList = [githubL, photoshopL, premiereL];
 
-const displaySkillLogos = list => {
-  return list.map(skill => {
+const displaySkillLogos = (list) => {
+  return list.map((skill) => {
     return (
       <Tooltip title={skill.name} position="top" trigger="mouseenter focus">
         <img className="logos" src={skill.img} alt="logo" />
@@ -109,13 +107,6 @@ const Skills = () => {
   return (
     <Animated animationIn="zoomInDown" animationOut="fadeOut" isVisible={true}>
       <ListGroup className="skills">
-        <div className="skillsBg">
-          <video className="skillsBgContent" autoPlay muted loop>
-            <source src={skillsMp4} type="video/mp4" />
-            <source src={skillsWebm} type="video/webm" />
-            Your browser is not supported!
-          </video>
-        </div>
         <ListGroupItem className="skillRow">
           <h5>React</h5>
           <div className="skillLogos">{displaySkillLogos(reactList)}</div>

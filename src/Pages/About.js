@@ -13,14 +13,15 @@ const About = () => {
         <img className="photo" alt="Brian Hoang" src={about} />
 
         <p>
-          I am a self-taught web developer. While working as a graphic designer
-          and video editor, I had some opportunities to work on some projects
-          that required some basic coding for web design. This sparked my
-          interest is web development and I have been continuously learning and
-          improving on my skills ever since. I enjoy both the technical and
-          creative sides of coding, with the solving of interesting and complex
-          problems combined with the endeavour to create visually appealing
-          design making it a field that is very exciting to work in.
+          I am a self-taught web developer who has worked on projects for a wide
+          array of clients, ranging from building fast and responsive websites,
+          React Native mobile applications from the ground up and setting up
+          servers and databases for e-commerce solutions.
+        </p>
+        <p>
+          I have learned to work under pressure and in a fast paced environment,
+          and pride myself on being able to take on new challenges and being
+          able to learn new skills and technologies when necessary.
         </p>
         <p>
           I graduated from Goldsmiths, University of London with a bachelor's

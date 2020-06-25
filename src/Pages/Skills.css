@@ -8,6 +8,7 @@ html {
   position: relative;
   overflow: hidden;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
 }
 
 .skillRow {
@@ -21,10 +22,10 @@ html {
 }
 
 .logos {
-  height: 8rem;
+  height: 6rem;
   width: auto;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 8px;
+  margin-right: 8px;
   filter: grayscale(100%);
   transition: all 0.2s;
 }

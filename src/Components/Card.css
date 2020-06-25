@@ -1,6 +1,5 @@
 .projects {
   width: 60vw;
-  height: 30rem;
   margin-bottom: 1.5rem;
   color: white;
   background-image: linear-gradient(
@@ -37,7 +36,7 @@
   transform: scaleY(1);
 }
 .cardImg {
-  height: 20rem;
+  height: 10rem;
   width: auto;
   float: left;
 }
@@ -86,7 +85,6 @@
 @media only screen and (max-width: 800px) {
   .projects {
     width: 90vw;
-    height: 15rem;
     padding: 0.5rem 1.5rem;
   }
   .cardImg {
@@ -110,7 +108,6 @@
 @media only screen and (max-width: 500px) {
   .projects {
     width: 90vw;
-    height: 10rem;
     padding: 0.5rem 1.5rem;
   }
   .cardImg {

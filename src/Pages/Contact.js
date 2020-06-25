@@ -16,7 +16,7 @@ class ContactButton {
 }
 
 const emailButton = new ContactButton(
-  "mailto:bhoang35@gmail.com",
+  "mailto:brian.hd.hoang@gmail.com",
   "email boxes",
   email,
   "Email"
@@ -41,9 +41,9 @@ const Contact = () => {
     <Animated animationIn="slideInLeft" animationOut="fadeOut" isVisible={true}>
       <div className="contactInfo">
         <ul className="list">
-          {contactList.map(contact => {
+          {contactList.map((contact) => {
             return (
-              <a className="contactLinks" href={contact.href}>
+              <a className="contactLinks" href={contact.href} target="_blank">
                 <li className={contact.classN}>
                   <img
                     className="contactLogos"
