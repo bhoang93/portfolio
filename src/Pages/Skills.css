@@ -1,60 +1,97 @@
+html {
+  font-size: 62.5%;
+}
+
 .skills {
-	width: 60%;
-	margin: auto;
+  width: 60%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 100px;
 }
 
 .skillRow {
-	background-color: rgba(40, 40, 40, 0.3);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .skillLogos {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .logos {
-	height: 80px;
-	width: 80px;
-	margin-left: 5px;
-	margin-right: 5px;
-	filter: grayscale(100%);
+  height: 6rem;
+  width: auto;
+  margin-left: 8px;
+  margin-right: 8px;
+  filter: grayscale(100%);
+  transition: all 0.2s;
 }
 
 .logos:hover {
-	filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 h5 {
-	font-weight: bold;
-	margin-bottom: 15px;
-	color: #28a745;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #f39237;
 }
 
-@media only screen and (max-width: 900px) {
-.logos {
-	height: 50px;
-	width: 50px;
-	}
-
-	.skills {
-		width: 70%;
-	}
+.skillsBg {
+  position: absolute;
+  top: 0rem;
+  left: -30rem;
+  right: -30rem;
+  bottom: -30rem;
+  margin: auto;
+  z-index: -1;
+  opacity: 0.4;
 }
 
-@media only screen and (max-width: 750px) {
-	h5 {
-		font-size: 3vw;
-		margin-bottom: 3px;
-	}
-	.logos {
-		height: 25px;
-		width: 25px;
-		margin-left: 2px;
-		margin-right: 2px;
-	}
+.skillsBgContent {
+  width: 100%;
+  object-fit: fill;
+}
 
-		.skills {
-		width: 80%;
-	}
+@media only screen and (max-width: 1500px) {
+  .skills {
+    width: 90%;
+  }
+
+  h5 {
+    font-size: 2.5rem;
+  }
+
+  .skillsBg {
+    position: absolute;
+    top: 0rem;
+    left: -30rem;
+    right: -30rem;
+    bottom: -30rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .skills {
+    width: 90%;
+  }
+
+  h5 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .skills {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  h5 {
+    margin-bottom: 0.2rem;
+  }
 }

@@ -6,73 +6,89 @@ import facerecog from "../Images/Projects/facerecog.png";
 import gem from "../Images/Projects/gem.png";
 import dogapp from "../Images/Projects/dogapp.png";
 import bluetail from "../Images/Projects/bluetail.png";
+import afa from "../Images/Projects/AFA.png";
+import trado from "../Images/Projects/trado.png";
+import zevieLogo from "../Images/Projects/zevie.webp";
+import wacLogo from "../Images/Projects/wac.svg";
+import wamLogo from "../Images/Projects/Young_Marmalade.png";
+
+//React Images
+import redux from "../Images/Logos/redux.png";
+import router from "../Images/Logos/router.png";
+import gatsby from "../Images/Logos/gatsby.png";
+import expo from "../Images/Logos/expo.png";
+//Front-End Images
+import html5 from "../Images/Logos/html5.png";
+import css3 from "../Images/Logos/css3.png";
+import bootstrap from "../Images/Logos/bootstrap.png";
+import sass from "../Images/Logos/sass.png";
+//JS Images
+// import javascript from "../Images/Logos/javascript.png";
+import es6 from "../Images/Logos/es6.png";
+// import jquery from "../Images/Logos/jquery.png";
+import nodejs from "../Images/Logos/nodejs.png";
+import reactLogo from "../Images/Logos/react.png";
+// import jest from "../Images/Logos/jest.png";
+// import typescript from "../Images/Logos/typescript.png";
+//Back-End Images
+// import php from "../Images/Logos/php.png";
+import express from "../Images/Logos/express.png";
+import postgresql from "../Images/Logos/postgresql.png";
+import redis from "../Images/Logos/redis.png";
+import graphql from "../Images/Logos/graphql.png";
+//Other Images
+// import github from "../Images/Logos/github.png";
+// import heroku from "../Images/Logos/heroku.png";
+import docker from "../Images/Logos/docker.png";
+// import aws from "../Images/Logos/aws.png";
+// import photoshop from "../Images/Logos/photoshop.png";
+// import premiere from "../Images/Logos/premiere.png";
+// import circleci from "../Images/Logos/circleci.png";
 
 import { Animated } from "react-animated-css";
 
-const blueTail = {
-  title: "Blue Tail",
-  text:
-    "Website for a dropping shipping company built using modern CSS techniques with stylish animations and transitions."
+const tradoApp = {
+  title: "Trado",
+  img: trado,
+  text: "Quoting and shopping app for electricians made in React Native.",
+  skills: [expo, reactLogo, redux, es6],
+  link: "https://apps.apple.com/gb/app/trado/id1497693898",
 };
 
-const foodApp = {
-  title: "FoodApp",
-  text:
-    "A progressive web app built in React where users can find places to eat using their current location or one they submit themselves."
+const wac = {
+  title: "White & Co",
+  img: wacLogo,
+  text: "Brochure site for Dental Practices using Drupal and Gatsby.",
+  skills: [gatsby, redux, reactLogo, es6, graphql, docker],
+  link: "https://www.whiteandcodental.co.uk/",
 };
 
-const faceRecog = {
-  title: "Face Recognition",
-  text:
-    "A website using a face recognition API to detect faces and identify the demographics inside. Has a fully functioning log-in system with hashed passwords."
+const zevie = {
+  title: "We Are Marmalade",
+  img: wamLogo,
+  text: "Website for car insurance company using Drupal and Gatsby.",
+  skills: [gatsby, redux, reactLogo, es6, graphql, docker],
+  link: "https://www.wearemarmalade.co.uk/",
 };
 
-const gemCalculator = {
-  title: "Rainbow Gem Calculator",
-  text:
-    "Tool for projecting currency for an online game, performing several calculations based on user inputs."
-};
-
-const picturesOfDogs = {
-  title: "Pictures of Dogs",
-  text:
-    "Website which fetches pictures of dogs from an API, displaying them in modals as well as feauturing infinite scrolling and a robust navigation system."
-};
+const projectList = [tradoApp, wac, zevie];
 
 const Projects = () => {
   return (
     <Animated animationIn="zoomInDown" animationOut="fadeOut" isVisible={true}>
       <div id="projectGrid">
-        <Project
-          cardTitle={blueTail.title}
-          cardText={blueTail.text}
-          cardImg={bluetail}
-          buttonLink="https://bhoang93.github.io/bluetail/dist/index.html"
-        />
-        <Project
-          cardTitle={foodApp.title}
-          cardText={foodApp.text}
-          cardImg={foodapp}
-          buttonLink="https://bhoang93.github.io/foodapp/"
-        />
-        <Project
-          cardTitle={faceRecog.title}
-          cardText={faceRecog.text}
-          cardImg={facerecog}
-          buttonLink="http://facial-recog.herokuapp.com/"
-        />
-        <Project
-          cardTitle={gemCalculator.title}
-          cardText={gemCalculator.text}
-          cardImg={gem}
-          buttonLink="https://bhoang93.github.io/gemcalculator/"
-        />
-        <Project
-          cardTitle={picturesOfDogs.title}
-          cardText={picturesOfDogs.text}
-          cardImg={dogapp}
-          buttonLink="https://bhoang93.github.io/dog-app/"
-        />
+        {projectList.map((project) => {
+          return (
+            <Project
+              cardTitle={project.title}
+              cardText={project.text}
+              cardImg={project.img}
+              skills={project.skills}
+              buttonLink={project.link}
+              key={project.title}
+            />
+          );
+        })}
       </div>
     </Animated>
   );

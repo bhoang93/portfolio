@@ -1,34 +1,30 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans', sans-serif;
-  background-color: black;
-  color: white;
+  font-family: "Questrial", sans-serif;
+  color: #f2f2f2;
   overflow-x: hidden;
+  text-align: center;
 }
 
 a {
-	text-decoration: none;
-	color: green;
+  text-decoration: none;
+  color: green;
 }
 
 a:hover {
-	text-decoration: none;
-	color: darkgreen;
+  text-decoration: none;
+  color: darkgreen;
 }
 
 h1 {
-	font-weight: bold;
-	margin-top: 10px;
-}
-
-.subtitle {
-	font-style: italic;
-	font-family: serif;
-	font-size: 1.5em;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #f2f2f2;
 }
 
 hr {
-	background-color: limegreen;
-	width: 70%;
+  background-color: limegreen;
+  width: 70%;
 }
